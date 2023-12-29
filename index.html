@@ -8,7 +8,13 @@
     <h1>The XMLHttpRequest Object</h1>
     <p id="demo">Let AJAX change this text.</p>
     <button type="button" onclick="loadDoc()">Change Content</button>
+    <h3>Start typing a name in the input field below:</h3>
+    <form action="">
+        First name: <input type="text" id="txt1" onkeyup="showHint(this.value)">
+    </form>
+    <p>Suggestions: <span id="txtHint"></span></p> 
     <script src="index.js"></script>
+    <script src="live-search.js"></script>
 </body>
 
 </html>
